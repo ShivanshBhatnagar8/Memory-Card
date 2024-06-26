@@ -35,32 +35,37 @@ function App() {
     }
   }
 
-  function settingScores(elementName, name, clicked){
-   if(elementName === name){
-    if(clicked){
-    setBestScore(Math.max(score,bestScore));
-    setScore(0);
-    }else{
-      setScore(score+1);
+  function settingScores(array,name){
+    array.forEach((element)=>{
+      if(score===0){
+        element.isClicked = false;
+      }
+     if(element.name === name){
+      if(element.isClicked){
+      setBestScore(Math.max(score,bestScore));
+      setScore(0);
+      element.isClicked = false;
+      }else{
+        setScore(score+1);
+      
     }
-   }
+     }
+      if(score===arr.length){
+        setBestScore(score);
+        setScore(0);
+      }
+     })
   }
   function handleCardClick(name){
     shuffleArray(arr);
-    
-   SetArr(arr.map((element)=>{
-    settingScores(element.name, name, element.isClicked);
-    if(score===arr.length){
-      setBestScore(score);
-      setScore(0);
-      element.isClicked = false;
-    }
+    SetArr(arr.map((element)=>{
      if(element.name === name){
      return {...element, isClicked: true};
      }else{
       return element;
      }
  }))
+ settingScores(arr,name);
 }
 
   return (
