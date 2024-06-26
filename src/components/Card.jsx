@@ -1,5 +1,5 @@
 function Card({array, onclick}){
-    console.log(array);
+
 return(
     <>
     <div className="card-container">
