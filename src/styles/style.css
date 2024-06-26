@@ -55,14 +55,9 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   max-width: 1280px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
-
-.card-container {
-  grid-template-columns: repeat(6, 1fr); /* This ensures a maximum of 6 cards per row */
 }
 
 .card {
@@ -139,5 +134,17 @@ img {
   .score-container {
     max-width: 100%;
     margin: 1em 0;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  img {
+    height: 100px;
   }
 }
