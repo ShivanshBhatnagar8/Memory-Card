@@ -1,8 +1,15 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Memory Card Game
 
-Currently, two official plugins are available:
+This Memory Card Game is an interactive web application where players are presented with 12 cards featuring different Pokémon, fetched dynamically from a Pokémon API. The objective is to match pairs of cards by clicking on them. Each time a unique card is clicked, the player's score increments by one. If the same card is clicked more than once before a match is found, the score resets to zero. The game keeps track of the best score achieved during the session. It's a fun and engaging way to test and improve memory skills using the beloved characters from the Pokémon universe. To set up the game, clone the repository, install the necessary dependencies, and run the development server.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 🛠 Skills
+React, HTML, CSS...
+
+
+## Authors
+
+- [@ShivanshBhatnagar8](https://github.com/ShivanshBhatnagar8)
+
+
