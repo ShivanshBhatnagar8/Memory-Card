@@ -1,15 +1,32 @@
 
 # Memory Card Game
 
-This Memory Card Game is an interactive web application where players are presented with 12 cards featuring different Pokémon, fetched dynamically from a Pokémon API. The objective is to match pairs of cards by clicking on them. Each time a unique card is clicked, the player's score increments by one. If the same card is clicked more than once before a match is found, the score resets to zero. The game keeps track of the best score achieved during the session. It's a fun and engaging way to test and improve memory skills using the beloved characters from the Pokémon universe. To set up the game, clone the repository, install the necessary dependencies, and run the development server.
+This Memory Card Game is an interactive web application built with React, HTML and CSS.
+
+In this game you will: 
+
+- Be presented 12 unique Pokemon
+- Select each card ONLY one time
+- Your score will go up by 1 by each NEW card selected
+
+
+If you select the same pokemon twice:  Game Over
+
+
+The game keeps track of the best score achieved during the session. 
+
+
+To set up the game, fork this repository, install the necessary dependencies, and run the development server.
 
 
 ## 🛠 Skills
-React, HTML, CSS...
+React, HTML, CSS 
 
 
 ## Authors
 
+- [@laraandrew](https://github.com/laraandrew)
 - [@ShivanshBhatnagar8](https://github.com/ShivanshBhatnagar8)
+
 
 
